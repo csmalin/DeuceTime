@@ -17,13 +17,8 @@ class User < ActiveRecord::Base
     nil
   end
 
-  def login(params)
-    @user = User.find_by_email(params[:email])
-    if @user.password == params[:password]
-      @user.update_attributes(:token => SecureRandom.uuid)
-      @user.save
-    end
+  def login
+    self.update_attributes(:token => SecureRandom.uuid)
   end
-
 
 end

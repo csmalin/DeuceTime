@@ -17,7 +17,7 @@ require 'logger'
 require 'bcrypt'
 require 'sinatra'
 require "sinatra/reloader" if development?
-
+require 'securerandom'
 require 'erb'
 
 # Some helper constants for path-centric logic
