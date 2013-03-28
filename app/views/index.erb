@@ -1,35 +1,18 @@
-<style type="text/css">
-  .container {
-    margin: 20px auto;
-    width: 600px;
-    padding: 0px 20px 20px 20px;
-    border: 1px dotted black;
-  }
-  th {
-    text-align: left;
-  }
-</style>
-
 <div class="container">
-  <h1>Welcome to Sinatra!</h1>
-  <p>Hello, world!</p>
 
-  <table>
-    <tr>
-      <th>File Description</th>
-      <th>File Location</th>
-    </tr>
-    <tr>
-      <td>This view file</td>
-      <td><code><%= __FILE__.gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The layout file</td>
-      <td><code><%= File.expand_path('../layout.erb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The current controller</td>
-      <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-  </table>
+ <form class="form-signup" action='/signup' method='post'>
+  <h2 class="form-signin-heading">Sign Up</h2>
+  <input type="text" class="input-block-level" name="email" placeholder="Email address">
+  <input type="text" class="input-block-level" name="username" placeholder="Username">
+  <input type="password" class="input-block-level" name="password" placeholder="Password">
+  <button class="btn btn-large btn-primary" type="submit">Sign up</button>
+</form>
+
+<form class="form-signin" action='/login' method='post'>
+  <h2 class="form-signin-heading">Sign In</h2>
+  <input type="text" class="input-block-level" name="email" placeholder="Email address">
+  <input type="password" class="input-block-level" name="password" placeholder="Password">
+  <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+</form>
+
 </div>
