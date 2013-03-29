@@ -21,6 +21,8 @@ GEM
     eventmachine (1.0.0)
     faker (1.1.2)
       i18n (~> 0.5)
+    geokit (1.6.5)
+      multi_json
     i18n (0.6.1)
     multi_json (1.6.1)
     pg (0.14.1)
@@ -64,6 +66,7 @@ DEPENDENCIES
   activesupport
   bcrypt-ruby
   faker
+  geokit
   pg
   rake
   rspec

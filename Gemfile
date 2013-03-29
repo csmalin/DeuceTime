@@ -14,6 +14,7 @@ gem 'activesupport'
 gem 'activerecord'
 gem 'rake'
 gem 'bcrypt-ruby'
+gem 'geokit'
 group :test do
   gem 'faker'
   gem 'rspec'

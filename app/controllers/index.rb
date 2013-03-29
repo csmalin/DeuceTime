@@ -25,6 +25,10 @@ end
 post '/location/add' do
   params[:location][:address] = params[:address1] + " " + params[:address2]
   location = Location.create(params[:location])
+  latlong = GeoKit::Geocoders::UsGeocoder.geocode(location.address).ll.split(",")
+  lat = latlong[0]
+  long = latlong[1]
+  location.update_attributes(:lat => lat, :lon => long)
   redirect "/location/#{location.id}"
 end
 
