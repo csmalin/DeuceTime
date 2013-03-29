@@ -12,7 +12,6 @@ get '/home' do
   erb :home
 end
 
-
 post '/login' do
   @user = User.authenticate(params[:email].downcase, params[:password])
   if @user
@@ -28,4 +27,8 @@ end
 post '/signup' do 
   user = User.create(params)
   redirect '/'
+end
+
+get '/review' do
+erb :review
 end

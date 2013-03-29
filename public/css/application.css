@@ -36,3 +36,17 @@ body {
   margin-bottom: 15px;
   padding: 7px 9px;
 }
+
+#rating {
+  float: right;
+
+}
+
+.radio_rating {
+  visibility: hidden;
+}
+
+label img {
+  height: 40px;
+}
+
