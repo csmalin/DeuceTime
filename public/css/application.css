@@ -4,15 +4,19 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.container{
+  width: 100%;
+  text-align: auto;
+  display: inline-block;
+}
+
 .form-signin {
   visibility: hidden;
 }
 
 .form-signin, .form-signup {
-
   max-width: 300px;
   padding: 19px 29px 29px;
-  margin: 30px;
   background-color: #fff;
   border: 1px solid #e5e5e5;
   -webkit-border-radius: 5px;
@@ -63,8 +67,7 @@ div.locationform{
 
 nav{
   background: black;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  border-radius: 0px 0px 15px 15px;
   margin-bottom: 10px;
 }
 
