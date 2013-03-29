@@ -27,7 +27,12 @@ end
 get '/location/:location_id' do
   @location = Location.find(params[:location_id])
   @bathrooms = @location.bathrooms
-  @bathroom_scores = {}
+  @bathroom_scores = []
+
+  @bathrooms.each do |bathroom|
+    score = bathroom.reviews.where('thumb_score = ?', true).count - bathroom.reviews.where('thumb_score = ?', false).count
+    @bathroom_scores << [bathroom, score]
+  end
 
   erb :location_reviews
 end
