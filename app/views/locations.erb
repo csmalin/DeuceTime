@@ -1,0 +1,6 @@
+<h1>For all your #1/#2/#3 needs...</h1>
+<ul>
+  <%@locations.each do |location| %>
+  <li><a href="/location/<%=location.id%>"><%=location.name %></a></li>
+  <% end %> 
+  </ul>

@@ -1,8 +1,10 @@
 <h1>This is what people think about bathrooms in <span class="wordart" title="<%=@location.name%>"><%= @location.name %></span></h1>
 
-<ul>
   <% @bathroom_scores.each do |bathroom| %>
-  <li><%= bathroom[0].specific_location %>: <%=bathroom[1]%> </li>
+  <div class="vote">
+    <a href='/bathroom/<%=bathroom[0].id%>/upvote'><img alt="^" title="vote up"   src="/img/thumb_up.png" /></a>
+    <a href='/bathroom/<%=bathroom[0].id%>/downvote'><img alt="v" title="vote down" src="/img/thumb_down.png" /></a>
+    <%= bathroom[0].specific_location %>: <%=bathroom[1]%> thumbs up 
+  </div><br>
   <% end %>
-</ul>
 
