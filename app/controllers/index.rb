@@ -1,5 +1,6 @@
 before do
-@current_user = User.find_by_token(session[:token])
+#   puts User.find_by_token(session[:token])
+# @current_user = User.find_by_token(session[:token])
 end
 
 
