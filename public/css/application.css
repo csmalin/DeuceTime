@@ -4,8 +4,8 @@ html {
   overflow-y: hidden;
 }
 body {
-    background-image: url('/img/icetoilet.jpg');
-  background-size: 100% 100%;  
+  background-image: url('/img/icetoilet.jpg');
+  background-size: 100% auto;  
   background-color: #6C97DB;
   font-family: 'Roboto', sans-serif;
   height: 100%;
@@ -31,8 +31,8 @@ iframe {
   visibility: hidden;
   max-width: 300px;
   padding: 19px 29px 29px;
-  background-color: #6C97DB;
-  border: 1px solid #e5e5e5;
+  background-color: rgba(52, 87, 191, .7);
+  border: 1px solid #000;
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
@@ -84,14 +84,8 @@ h1{
 
 nav{
   margin-bottom: 15px;
-  background: black;
-}
-
-#logo a{
-  color: #FFFDEB;
-  line-height: 100%;
-  padding-left: 10px;
-  letter-spacing: -3px;
+  background: rgba(0, 0, 0, .7152);
+  vertical-align: middle;
 }
 
 nav ul {
@@ -106,9 +100,9 @@ nav li {
 }
 
 nav li a {
-  color:#0C6BA1;
+  color: rgb(90, 130, 218);
   font-family: 'Merriweather Sans';
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.2em;
   display: inline-block;
   padding: 20px 10px;
@@ -140,19 +134,18 @@ ul.bathroom-list li{
 }
 
 #logo {
-  text-shadow: 2px 2px 2px #000;
-  filter: dropshadow(color=#000, offx=3, offy=3);
+  /*text-shadow: 2px 2px 2px #BDD684;*/
+  font-family: 'Montserrat Subrayada', sans-serif;
   float: left;
+  line-height: 50px;
   font-size: 48px;
-  text-transform: uppercase;
-  line-height: 30px;
-  
 }
 
 #logo a{
-  font-family: 'Open Sans', sans-serif;
-  color: #BADA55;
-  line-height: 100%;
-  padding-left: 10px;
-  letter-spacing: -3px;
+  font-weight: 900;
+  color: rgb(90, 130, 218);
+  vertical-align: middle;
+  /*line-height: 10px;*/
+  padding-left: 20px;
+  letter-spacing: -2px;
 }
