@@ -1,13 +1,8 @@
 <h1>This is what people think about bathrooms in <span class="wordart" title="<%=@location.name%>"><%= @location.name %></span></h1>
+
 <ul>
-  <% @bathrooms.each do |bathroom| %>
-  <li><%= bathroom.specific_location %>: </li>
+  <% @bathroom_scores.each do |bathroom| %>
+  <li><%= bathroom[0].specific_location %>: <%=bathroom[1]%> </li>
+  <% end %>
 </ul>
 
-
-  <!--  create_table :bathrooms do |b|
-    b.string :type
-    b.string :specific_location
-    b.references :location
-    b.timestamps
-    end -->
