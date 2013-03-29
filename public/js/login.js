@@ -12,4 +12,20 @@ $(document).ready(function(){
         $('form.form-signin').css("visibility", "hidden")
       }
   });
+
+
+  $('a.signup').on('click', function(e){
+    e.preventDefault();
+
+    if ($('form.form-signup').css("visibility") == "hidden")
+      {
+        $('form.form-signup').css("visibility", "visible");
+      }
+    else
+      {
+        $('form.form-signup').css("visibility", "hidden")
+      }
+  });
+
+
 });
