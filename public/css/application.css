@@ -55,3 +55,39 @@ div.locationform{
   width: 100%;
   text-align: center;
 }
+
+
+nav{
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#logo a{
+  color: #FFFDEB;
+  line-height: 100%;
+  padding-left: 10px;
+  letter-spacing: -3px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: right;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li a {
+  color:#0C6BA1;
+  font-family: 'Merriweather Sans';
+  font-weight: 700;
+  font-size: 1.2em;
+  display: inline-block;
+  padding: 20px 10px;
+  margin:0 0px 0 0;
+  line-height: 20px;
+}
