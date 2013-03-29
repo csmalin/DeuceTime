@@ -50,3 +50,8 @@ label img {
   height: 40px;
 }
 
+div.locationform{
+  diplay: inline-block;
+  width: 100%;
+  text-align: center;
+}
