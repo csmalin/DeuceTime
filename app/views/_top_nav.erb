@@ -1,9 +1,8 @@
 <nav>
-  <span id="logo"><a href = "/">Survey Slug</a></span>
+  <span id="logo"><a href = "/">DeuceTi.me</a></span>
   <ul>
-
     <li><a href = "/locate">Find a Bathroom</a></li>
-    <% if @current_user %>
+    <% if !(@current_user) %>
       <li><a href = "/profile">Your Profile</a></li>
       <li><a href = "/logout">Log Out</a></li>
     <% else %>
