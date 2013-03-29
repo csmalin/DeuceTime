@@ -1,20 +1,33 @@
+html {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 body {
-  padding-bottom: 40px;
-  background-color: #f5f5f5;
+  background-color: #6C97DB;
   font-family: 'Roboto', sans-serif;
+  height: 100%;
 }
 
 .container{
   width: 100%;
-  text-align: auto;
-  display: inline-block;
+  height: 100%;
 }
 
-.form-signin {
-  visibility: hidden;
+div.map {
+  width: 100%;
+  height: 100%;
+}
+
+iframe {
+  margin: -218px;
+  width: 112%;
+  height: 100%;
+  scrolling: no;
 }
 
 .form-signin, .form-signup {
+  visibility: hidden;
   max-width: 300px;
   padding: 19px 29px 29px;
   background-color: #fff;
@@ -66,8 +79,6 @@ div.locationform{
 
 nav{
   background: black;
-  border-radius: 10px 10px 10px 10px;
-  margin-bottom: 10px;
 }
 
 #logo a{
