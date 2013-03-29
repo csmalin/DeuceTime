@@ -68,6 +68,7 @@ get '/bathroom/:bathroom_id/downvote' do
   redirect "/location/#{bathroom_location_id}"
 end
 
+
 post '/login' do
   @user = User.authenticate(params[:email].downcase, params[:password])
   if @user
