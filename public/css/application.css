@@ -26,7 +26,7 @@ iframe {
 }
 
 .form-signin, .form-signup {
- /* visibility: hidden;*/
+  visibility: hidden;
   max-width: 300px;
   padding: 19px 29px 29px;
   background-color: #fff;
@@ -81,6 +81,7 @@ h1{
 }
 
 nav{
+  margin: 15px;
   background: black;
 }
 
